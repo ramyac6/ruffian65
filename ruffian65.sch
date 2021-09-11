@@ -624,7 +624,7 @@ Wire Wire Line
 	10250 3400 10550 3400
 Wire Wire Line
 	10750 3400 11050 3400
-Text GLabel 10250 1700 2    50   Input ~ 0
+Text GLabel 10250 2700 2    50   Input ~ 0
 col0
 Wire Wire Line
 	10250 1400 10800 1400
@@ -632,21 +632,21 @@ Wire Wire Line
 	10250 1500 10800 1500
 Wire Wire Line
 	10250 1600 10800 1600
-Text GLabel 10250 1800 2    50   Input ~ 0
+Text GLabel 10250 2800 2    50   Input ~ 0
 col1
-Text GLabel 10250 1900 2    50   Input ~ 0
+Text GLabel 10250 3000 2    50   Input ~ 0
 col2
 Text GLabel 10250 2300 2    50   Input ~ 0
 col4
 Text GLabel 10250 2200 2    50   Input ~ 0
 col3
 Text GLabel 10250 2600 2    50   Input ~ 0
-col8
-Text GLabel 10250 2700 2    50   Input ~ 0
+row4
+Text GLabel 10250 4000 2    50   Input ~ 0
 col9
-Text GLabel 10250 2800 2    50   Input ~ 0
+Text GLabel 10250 2500 2    50   Input ~ 0
 col10
-Text GLabel 10250 3000 2    50   Input ~ 0
+Text GLabel 10250 3700 2    50   Input ~ 0
 col11
 Text GLabel 10250 2900 2    50   Input ~ 0
 col12
@@ -656,21 +656,29 @@ Text GLabel 10250 3200 2    50   Input ~ 0
 col14
 Text GLabel 10250 3500 2    50   Input ~ 0
 row0
-Text GLabel 10250 4000 2    50   Input ~ 0
+Text GLabel 10250 3900 2    50   Input ~ 0
 row1
-Text GLabel 10250 3700 2    50   Input ~ 0
+Text GLabel 10250 2000 2    50   Input ~ 0
 row2
 Text GLabel 10250 3800 2    50   Input ~ 0
 row3
-Text GLabel 10250 3900 2    50   Input ~ 0
-row4
+Text GLabel 10250 1700 2    50   Input ~ 0
+col8
 Text GLabel 10250 4100 2    50   Input ~ 0
 col5
 Text GLabel 10250 4200 2    50   Input ~ 0
 col6
+Wire Wire Line
+	9150 4600 9550 4600
+Wire Wire Line
+	9550 1000 9650 1000
+Text GLabel 6450 3400 3    50   Input ~ 0
+DP
+Text GLabel 6450 3300 1    50   Input ~ 0
+DN
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-MU U1
-U 1 1 61957B02
+U 1 1 61B499E8
 P 9650 2800
 F 0 "U1" H 9650 911 50  0000 C CNN
 F 1 "ATmega32U4-MU" H 9650 820 50  0000 C CNN
@@ -679,13 +687,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    9650 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 4600 9550 4600
-Wire Wire Line
-	9550 1000 9650 1000
 Connection ~ 9550 1000
-Text GLabel 6450 3400 3    50   Input ~ 0
-DP
-Text GLabel 6450 3300 1    50   Input ~ 0
-DN
+Wire Wire Line
+	9750 1000 9650 1000
+Connection ~ 9650 1000
+Wire Wire Line
+	9650 4600 9550 4600
+Connection ~ 9550 4600
 $EndSCHEMATC
