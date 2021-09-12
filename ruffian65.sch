@@ -694,4 +694,8 @@ Connection ~ 9650 1000
 Wire Wire Line
 	9650 4600 9550 4600
 Connection ~ 9550 4600
+Text GLabel 10250 1800 2    50   Input ~ 0
+rot0
+Text GLabel 10250 1900 2    50   Input ~ 0
+rot1
 $EndSCHEMATC

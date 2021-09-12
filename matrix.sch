@@ -333,17 +333,6 @@ F 3 "~" H 9350 2150 50  0001 C CNN
 $EndComp
 Connection ~ 9350 2300
 $Comp
-L Switch:SW_Push SW15
-U 1 1 6141F9AA
-P 10200 2000
-F 0 "SW15" H 10200 2285 50  0000 C CNN
-F 1 "Home" H 10200 2194 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-Hotswap" H 10200 2200 50  0001 C CNN
-F 3 "~" H 10200 2200 50  0001 C CNN
-	1    10200 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D15
 U 1 1 6141F9B4
 P 10000 2150
@@ -1694,8 +1683,6 @@ Wire Wire Line
 	8050 4700 8700 4700
 Wire Wire Line
 	9350 3100 10000 3100
-Wire Wire Line
-	10350 2000 10400 2000
 Connection ~ 10400 2000
 Wire Wire Line
 	10400 2000 10400 2800
@@ -2001,4 +1988,79 @@ Wire Wire Line
 Connection ~ 7800 4400
 Wire Wire Line
 	5450 5500 7400 5500
+$Comp
+L Device:Rotary_Encoder_Switch SW15
+U 1 1 613E0EE8
+P 10150 1700
+F 0 "SW15" V 10104 1930 50  0000 L CNN
+F 1 "Rotary_Encoder_Switch" V 10195 1930 50  0000 L CNN
+F 2 "Keebio-Parts:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 10000 1860 50  0001 C CNN
+F 3 "~" H 10150 1960 50  0001 C CNN
+	1    10150 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 2000 10400 2000
+Wire Wire Line
+	10000 2000 10050 2000
+$Comp
+L Device:C_Small C9
+U 1 1 61403A0D
+P 10050 1150
+F 0 "C9" V 9821 1150 50  0000 C CNN
+F 1 "100nF" V 9912 1150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10050 1150 50  0001 C CNN
+F 3 "~" H 10050 1150 50  0001 C CNN
+	1    10050 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 61404A73
+P 10250 1150
+F 0 "C10" V 10021 1150 50  0000 C CNN
+F 1 "100nF" V 10112 1150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10250 1150 50  0001 C CNN
+F 3 "~" H 10250 1150 50  0001 C CNN
+	1    10250 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 1400 10050 1350
+Wire Wire Line
+	10050 1350 9950 1350
+Wire Wire Line
+	9950 1350 9950 1150
+Wire Wire Line
+	9950 850  9950 1150
+Connection ~ 9950 1150
+Wire Wire Line
+	10150 1400 10150 1150
+Connection ~ 10150 1150
+Wire Wire Line
+	10150 1150 10150 850 
+Wire Wire Line
+	10250 1400 10250 1350
+Wire Wire Line
+	10250 1350 10350 1350
+Wire Wire Line
+	10350 1350 10350 1150
+Wire Wire Line
+	10350 1150 10350 850 
+Connection ~ 10350 1150
+Text GLabel 9950 850  1    50   Input ~ 0
+rot0
+Text GLabel 10350 850  1    50   Input ~ 0
+rot1
+$Comp
+L power:GND #PWR0117
+U 1 1 6142B7D1
+P 10150 850
+F 0 "#PWR0117" H 10150 600 50  0001 C CNN
+F 1 "GND" H 10155 677 50  0000 C CNN
+F 2 "" H 10150 850 50  0001 C CNN
+F 3 "" H 10150 850 50  0001 C CNN
+	1    10150 850 
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
