@@ -379,17 +379,6 @@ Wire Wire Line
 Wire Wire Line
 	7200 1500 7200 1650
 $Comp
-L Type-C:HRO-TYPE-C-31-M-12 USB1
-U 1 1 6139D968
-P 5800 3250
-F 0 "USB1" H 5633 4047 60  0000 C CNN
-F 1 "HRO-TYPE-C-31-M-12" H 5633 3941 60  0000 C CNN
-F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 5800 3250 60  0001 C CNN
-F 3 "" H 5800 3250 60  0001 C CNN
-	1    5800 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R3
 U 1 1 6139F351
 P 7800 3300
@@ -419,17 +408,6 @@ Wire Wire Line
 	7900 3300 8150 3300
 Wire Wire Line
 	7900 3400 8150 3400
-Wire Wire Line
-	5900 2700 6000 2700
-Wire Wire Line
-	6000 2700 6000 3800
-Wire Wire Line
-	6000 3800 5900 3800
-Wire Wire Line
-	5900 3900 6000 3900
-Wire Wire Line
-	6000 3900 6000 3800
-Connection ~ 6000 3800
 $Comp
 L power:VCC #PWR0112
 U 1 1 613A9C81
@@ -441,27 +419,6 @@ F 3 "" H 6600 2800 50  0001 C CNN
 	1    6600 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 2800 6100 2800
-Wire Wire Line
-	5900 3400 6200 3400
-Wire Wire Line
-	5900 3300 6300 3300
-Wire Wire Line
-	5900 3100 6300 3100
-Wire Wire Line
-	6300 3100 6300 3300
-Wire Wire Line
-	5900 3200 6200 3200
-Wire Wire Line
-	6200 3200 6200 3400
-Wire Wire Line
-	5900 3700 6100 3700
-Wire Wire Line
-	6100 3700 6100 2800
-Connection ~ 6100 2800
-Wire Wire Line
-	6100 2800 6600 2800
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 613B1DF7
@@ -512,10 +469,6 @@ F 3 "~" H 6650 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3600 6450 3600
-Wire Wire Line
-	6000 3800 6150 3800
-Wire Wire Line
 	6450 3800 6650 3800
 Connection ~ 6450 3800
 Wire Wire Line
@@ -538,12 +491,6 @@ Wire Wire Line
 Connection ~ 6150 3800
 Wire Wire Line
 	6150 3800 6450 3800
-Wire Wire Line
-	6300 3300 6950 3300
-Connection ~ 6300 3300
-Wire Wire Line
-	6200 3400 7450 3400
-Connection ~ 6200 3400
 $Comp
 L Power_Protection:PRTR5V0U2X D70
 U 1 1 613CD3E0
@@ -698,4 +645,56 @@ Text GLabel 10250 1800 2    50   Input ~ 0
 rot0
 Text GLabel 10250 1900 2    50   Input ~ 0
 rot1
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 613F3603
+P 4100 3300
+F 0 "J2" H 4207 4167 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4207 4076 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 4250 3300 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4250 3300 50  0001 C CNN
+	1    4100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3600 6450 3600
+NoConn ~ 4700 3900
+NoConn ~ 4700 3800
+Wire Wire Line
+	4700 3500 4700 3400
+Connection ~ 4700 3400
+Wire Wire Line
+	4700 3300 4700 3200
+Connection ~ 4700 3300
+Wire Wire Line
+	4700 3400 7450 3400
+Wire Wire Line
+	4700 3300 6950 3300
+Wire Wire Line
+	4100 4200 5900 4200
+Wire Wire Line
+	5900 3800 5900 4200
+Wire Wire Line
+	5900 3800 6150 3800
+Wire Wire Line
+	4700 2700 5900 2700
+Wire Wire Line
+	5900 2700 5900 2800
+Wire Wire Line
+	4700 2900 5900 2900
+Wire Wire Line
+	5900 2900 5900 3000
+Wire Wire Line
+	4700 3000 5050 3000
+Wire Wire Line
+	5050 3000 5050 3250
+Wire Wire Line
+	5050 3250 5900 3250
+Wire Wire Line
+	5900 3250 5900 3600
+Wire Wire Line
+	5900 2800 6600 2800
+Wire Wire Line
+	3800 4200 4100 4200
+Connection ~ 4100 4200
 $EndSCHEMATC

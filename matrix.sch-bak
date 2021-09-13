@@ -1994,7 +1994,7 @@ U 1 1 613E0EE8
 P 10150 1700
 F 0 "SW15" V 10104 1930 50  0000 L CNN
 F 1 "Rotary_Encoder_Switch" V 10195 1930 50  0000 L CNN
-F 2 "" H 10000 1860 50  0001 C CNN
+F 2 "Keebio-Parts:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 10000 1860 50  0001 C CNN
 F 3 "~" H 10150 1960 50  0001 C CNN
 	1    10150 1700
 	0    1    1    0   
